@@ -1,5 +1,5 @@
 {
-  "name": "mernapp",
+  "name": "crawlerPractice",
   "version": "1.0.0",
   "description": "Practice with mongo, express, react, node, winstonJS, cookies",
   "main": "crawler.js",
