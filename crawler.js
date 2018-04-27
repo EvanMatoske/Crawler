@@ -18,18 +18,20 @@ var pagesToVisit = [];
 var url = new URL(START_URL);
 var baseUrl = url.protocol + "//" + url.hostname;
 
+// Create unique ID
 let ID = uniqid();
 console.log(ID);
 
+// 
 let search = {
   "ID": ID,
   "Sites":[]
 };
 
-
 let filename = path.join(__dirname, ID + '.json')
 
 jsonfile.writeFileSync(filename, search,{spaces:2});
+
 pagesToVisit.push(START_URL);
 crawl();
 
@@ -69,7 +71,8 @@ function visitPage(url, callback) {
        console.log('Word ' + SEARCH_WORD + ' found at page ' + url);
      } else {
        collectInternalLinks($);
-       
+
+       // Add site info to log file
        var title = $("title").text();
        search = jsonfile.readFileSync(filename);
        search.Sites.push({'URL':url, 'Title':title});
