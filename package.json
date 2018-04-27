@@ -12,13 +12,10 @@
     "nodemon": "^1.17.3"
   },
   "dependencies": {
-    "bootstrap": "^4.1.0",
     "cheerio": "^1.0.0-rc.2",
     "jsonfile": "^4.0.0",
-    "macaddress": "^0.2.8",
     "request": "^2.85.0",
     "uniqid": "^4.1.1",
-    "url-parse": "^1.4.0",
-    "winston": "^3.0.0-rc5"
+    "url-parse": "^1.4.0"
   }
 }
