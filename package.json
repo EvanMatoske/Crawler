@@ -1,7 +1,7 @@
 {
   "name": "crawlerPractice",
   "version": "1.0.0",
-  "description": "Practice with mongo, express, react, node, winstonJS, cookies",
+  "description": "Practice with a crawler",
   "main": "crawler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
